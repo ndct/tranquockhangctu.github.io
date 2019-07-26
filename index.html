@@ -24,12 +24,12 @@
               </a>
             </h5>
             <nav class="my-2 my-md-0 mr-md-3">
-                <a class="p-2 text-dark" href="#">Về CARPLUS</a>
-                <a class="p-2 text-dark" href="#">Tính năng</a>
-                <a class="p-2 text-dark" href="#">Dịch vụ</a>
-                <a class="p-2 text-dark" href="#">Đối tác</a>
+                <a class="p-2 text-dark" href="javascript:scrollToVeCarPlus();">Về CARPLUS</a>
+                <a class="p-2 text-dark" href="javascript:scrollToTinhNangNoiBat();">Tính năng</a>
+                <a class="p-2 text-dark" href="javascript:scrollToDichVu()">Dịch vụ</a>
+                <a class="p-2 text-dark" href="javascript:scrollToDoiTac();">Đối tác</a>
             </nav>
-            <a style="color: white; border-color: #FF584F; background-color: #FF584F; font-weight: 800;" class="btn btn-danger" href="javascript:void(0);">Download ứng dụng</a>
+            <a style="color: white; border-color: #FF584F; background-color: #FF584F; font-weight: 800;" class="btn btn-danger" href="javascript:scrollToTaiXuong();">Download ứng dụng</a>
         </div>
     </div>
 
@@ -63,7 +63,7 @@
                     </a>
                 </div>
             </div>
-            <div class="col-md-12">
+            <div id="veCarPlus" class="col-md-12">
                 <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
                     <h1 class="display-4" style="text-transform: none;">Về <a style="color:#FF584F; font-family: 'Montserrat', sans-serif!important; font-weight: 900;" href="index.html">
                         CAR<sup style="color:#FF584F; font-family: 'Quicksand', sans-serif!important;">+</sup>
@@ -84,7 +84,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-12">
+            <div id="TinhNangNoiBat" class="col-md-12">
                 <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
                     <h2 style="text-transform: none;">Những tính năng nổi bật của CARPLUS ?
                     </h2>
@@ -219,7 +219,7 @@
             </div>
         </div>
 
-        <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+        <div id="DichVu" class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
             <h2 style="text-transform: none;">Dịch vụ CARPLUS cung cấp
             </h2>
         </div>
@@ -274,7 +274,7 @@
                 </div>
             </div>
 
-            <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+            <div id="DoiTac" class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
                 <h2 style="text-transform: none;">Trở thành đối tác của CARPLUS
                 </h2>
             </div>
@@ -342,7 +342,7 @@
                 <p class="lead">Quickly build an effective pricing table for your potential customers with this Bootstrap example. It’s built with default Bootstrap components and utilities with little customization.</p>
             </div>
 
-            <div class="col-md-12">
+            <div id="TaiXuong" class="col-md-12">
                 <div class="row">
                     <div class="col-md-4">
                         <a href="">
@@ -406,11 +406,41 @@
         </footer>
     </div>
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script>
         $('.carousel').carousel();
+
+        function scrollToVeCarPlus() {
+            $('html, body').animate({
+                scrollTop: $("#veCarPlus").offset().top
+            }, 1000)
+        }
+
+        function scrollToTinhNangNoiBat() {
+            $('html, body').animate({
+                scrollTop: $("#TinhNangNoiBat").offset().top
+            }, 1500)
+        }
+
+        function scrollToDichVu() {
+            $('html, body').animate({
+                scrollTop: $("#DichVu").offset().top
+            }, 1500)
+        }
+
+        function scrollToDoiTac() {
+            $('html, body').animate({
+                scrollTop: $("#DoiTac").offset().top
+            }, 1500)
+        }
+
+        function scrollToTaiXuong() {
+            $('html, body').animate({
+                scrollTop: $("#TaiXuong").offset().top
+            }, 1500)
+        }
     </script>
 </body>
 
