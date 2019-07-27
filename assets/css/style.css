@@ -71,3 +71,189 @@ a {
     height: 20px;
     border: none;
 }
+
+.a-logo {
+    color: #FF584F!important;
+    font-family: 'Montserrat', sans-serif!important;
+    font-weight: 900;
+    font-size: 30px;
+}
+
+.sup-logo {
+    color: #FF584F;
+    font-family: 'Quicksand', sans-serif!important;
+    font-size: 30px;
+}
+
+.btn-carplus {
+    color: white;
+    border-color: #FF584F;
+    background-color: #FF584F;
+    font-weight: 800;
+}
+
+.icon-tinh-nang {
+    border-radius: 5px;
+    padding-top: 5px;
+    width: 48px;
+    height: 48px;
+    background: blue;
+    text-align: center;
+    color: white;
+    font-size: 24px;
+}
+
+.img-border-rounded {
+    width: 100%;
+    border: 1px solid #FF584F;
+    border-radius: 5px;
+}
+
+.icon-dich-vu {
+    border: 2px solid #FF584F;
+    background-color: #FF584F;
+    color: white;
+    font-weight: bold;
+}
+
+.card-bottom-dichvu {
+    padding-top: 5px;
+    font-weight: 500;
+    border-left: 1px solid rgba(0, 0, 0, .075);
+    border-right: 1px solid rgba(0, 0, 0, .075);
+    border-bottom: 1px solid rgba(0, 0, 0, .075);
+    border-bottom-left-radius: 35px;
+    border-bottom-right-radius: 35px;
+}
+
+.fee-card {
+    text-align: center;
+    height: 158px;
+    vertical-align: middle;
+    padding-top: 15px;
+    background-color: #FF584F;
+    border-top-left-radius: 35px;
+    border-top-right-radius: 35px;
+}
+
+.fee-body {
+    border: 1px solid rgb(0, 0, 0, 0.075);
+    border-top: none;
+    padding-top: 10px;
+    font-weight: 500;
+    height: 10vh;
+    background-color: #ffffff;
+    text-align: center;
+    vertical-align: middle;
+    border-bottom-left-radius: 35px;
+    border-bottom-right-radius: 35px;
+}
+
+.doitac-card {
+    margin: 0 auto;
+    vertical-align: middle;
+    width: 96px;
+    height: 96px;
+    border: 5px solid #FF584F;
+    border-radius: 50%;
+}
+
+.p-doitac {
+    color: #000000;
+    font-family: 'Montserrat', sans-serif!important;
+    font-weight: 900;
+    font-size: 40px;
+    padding-top: 14px;
+}
+
+.btn-facebook {
+    border: none;
+    font-size: 20px;
+    width: 40px;
+    height: 40px;
+}
+
+.btn-youtube {
+    border: none;
+    font-size: 20px;
+    width: 40px;
+    height: 40px;
+}
+
+.btn-ins {
+    background: linear-gradient(60deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
+    border: none;
+    font-size: 20px;
+    width: 40px;
+    height: 40px;
+}
+
+.carplus_body {
+    min-height: 400px;
+    display: table;
+}
+
+.tinh-nang-noi-bat-div {
+    min-height: 500px;
+    display: table;
+}
+
+.img-carplus-download {
+    width: 100%;
+}
+
+.carplus-download-div {
+    min-height: 500px;
+    display: table;
+}
+
+.img-qr-code {
+    width: 100%;
+}
+
+.android-download,
+.apple-download {
+    width: 100%;
+}
+
+.max-100cp {
+    height: calc(100vh - 70px);
+}
+
+@media screen and (max-width: 768px) {
+    .max-100cp {
+        height: inherit;
+    }
+    .carplus_div {
+        text-align: center;
+    }
+    .carplus_phone {
+        width: 35%;
+    }
+    .carplus_body {
+        display: table;
+        min-height: inherit;
+        padding: 15px;
+    }
+    .tinh-nang-noi-bat-div {
+        min-height: inherit;
+        display: table;
+    }
+    .img-border-rounded {
+        width: 50%;
+        margin: 15px;
+    }
+    .img-carplus-download {
+        width: 35%;
+    }
+    .carplus-download-div {
+        height: inherit;
+    }
+    .img-qr-code {
+        width: 50%;
+    }
+    .android-download,
+    .apple-download {
+        width: 50%;
+    }
+}

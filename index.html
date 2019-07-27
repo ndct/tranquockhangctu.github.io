@@ -16,33 +16,47 @@
 </head>
 
 <body>
-    <div class="border-bottom mb-3">
-        <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 bg-white container">
-            <h5 class="my-0 mr-md-auto">
-                <a style="color:#FF584F; font-family: 'Montserrat', sans-serif!important; font-weight: 900; font-size: 30px;" href="index.html">
-                CAR<sup style="color:#FF584F; font-family: 'Quicksand', sans-serif!important; font-size: 30px;">+</sup>
-              </a>
-            </h5>
-            <nav class="my-2 my-md-0 mr-md-3">
-                <a class="p-2 text-dark" href="javascript:scrollToVeCarPlus();">Về CARPLUS</a>
-                <a class="p-2 text-dark" href="javascript:scrollToTinhNangNoiBat();">Tính năng</a>
-                <a class="p-2 text-dark" href="javascript:scrollToDichVu()">Dịch vụ</a>
-                <a class="p-2 text-dark" href="javascript:scrollToDoiTac();">Đối tác</a>
-            </nav>
-            <a style="color: white; border-color: #FF584F; background-color: #FF584F; font-weight: 800;" class="btn btn-danger" href="javascript:scrollToTaiXuong();">Download ứng dụng</a>
+
+    <nav class="navbar navbar-expand-lg navbar-light border-bottom bg-white">
+        <div class="container">
+            <button class="navbar-toggler ml-2" style="box-shadow: none!important;" type="button" data-toggle="collapse" data-target="#navbarCarPlus" aria-controls="navbarCarPlus" aria-expanded="false">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+            <a class="a-logo navbar-brand" href="javascript:void(0);">
+                        CAR<sup class="sup-logo">+</sup> </a>
+
+            <div class="collapse navbar-collapse" id="navbarCarPlus">
+                <ul class="navbar-nav ml-auto pr-3" style="line-height: 2.0">
+                    <li class="nav-item">
+                        <a class="navbar-link p-2 text-dark gioi-thieu" href="javascript:void(0);">Về CARPLUS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="navbar-link p-2 text-dark tinh-nang" href="javascript:void(0);">Tính năng</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="navbar-link p-2 text-dark dich-vu" href="javascript:void(0);">Dịch vụ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="navbar-link p-2 text-dark doi-tac" href="javascript:void(0);">Đối tác</a>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0 pl-2">
+                    <a class="btn btn-danger btn-carplus tai-xuong-app" href="javascript:void(0);">Download ứng dụng</a>
+                </form>
+            </div>
         </div>
-    </div>
+    </nav>
 
     <div class="container">
         <div class="row">
-            <div class="col-md-12">
-                <div id="carouselCarPlusIndicators" class="carousel slide" data-ride="carousel">
+            <div class="col-md-12 max-100cp">
+                <div id="carouselCarPlusIndicators" class="carousel slide max-100cp" data-ride="carousel">
                     <ol class="carousel-indicators">
                         <li data-target="#carouselCarPlusIndicators" data-slide-to="0" class="active"></li>
                         <li data-target="#carouselCarPlusIndicators" data-slide-to="1"></li>
                         <li data-target="#carouselCarPlusIndicators" data-slide-to="2"></li>
                     </ol>
-                    <div class="carousel-inner">
+                    <div class="carousel-inner" style="top: 10vh;">
                         <div class="carousel-item active">
                             <img class="d-block w-100" src="assets/images/carplus_cover.jpg" alt="">
                         </div>
@@ -63,41 +77,41 @@
                     </a>
                 </div>
             </div>
-            <div id="veCarPlus" class="col-md-12">
+            <div id="carplus_about" class="col-md-12 pt-3">
                 <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
-                    <h1 class="display-4" style="text-transform: none;">Về <a style="color:#FF584F; font-family: 'Montserrat', sans-serif!important; font-weight: 900;" href="index.html">
-                        CAR<sup style="color:#FF584F; font-family: 'Quicksand', sans-serif!important;">+</sup>
+                    <h1 class="display-4" style="text-transform: none;">Về <a style="font-size: 50px;" class="a-logo" href="javascript:void(0);">
+                        CAR<sup class="sup-logo">+</sup>
                       </a></h1>
                 </div>
                 <div class="row">
-                    <div class="col-md-4">
-                        <a href="">
-                            <img class="img-fluid" style="width: 100%; height: auto;" src="assets/images/carplus_phone.jpg" alt="">
+                    <div class="col-md-4 carplus_div">
+                        <a href="javascript:void(0);">
+                            <img class="img-fluid carplus_phone" src="assets/images/carplus_phone.jpg" alt="">
                         </a>
                     </div>
-                    <div style="min-height: 400px; display: table;" class="col-md-8">
+                    <div class="col-md-8 carplus_body">
                         <div style="display: table-cell; vertical-align: middle;">
                             <p class="lead" style="font-weight: 500;">CarPlus là ứng dụng được phát triển với mong muốn gắn kết hệ sinh thái dịch vụ cho xe ô tô, giúp tao ra những giá trị mới giữa chủ xe và những nơi cung cấp dịch vụ.</p>
                             <p class="lead" style="font-weight: 500;">Với nền tảng công nghệ tiên tiến được phát triển bởi đội ngũ CarPlus, chúng tôi sẽ đồng hành cũng bạn trong việc chăm sóc toàn diện chiếc xe thân yêu của mình.</p>
-                            <a style="color: white; border-color: #FF584F; background-color: #FF584F; font-weight: 800;" class="btn btn-danger" href="javascript:void(0);">KHÁM PHÁ NGAY</a>
+                            <a class="btn btn-danger btn-carplus" href="javascript:void(0);">KHÁM PHÁ NGAY</a>
                         </div>
                     </div>
                 </div>
             </div>
-            <div id="TinhNangNoiBat" class="col-md-12">
-                <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+            <div class="col-md-12">
+                <div id="carplus_tinhnang" class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
                     <h2 style="text-transform: none;">Những tính năng nổi bật của CARPLUS ?
                     </h2>
                 </div>
                 <div class="row">
-                    <div style="min-height: 500px; display: table;" class="col-md-4">
+                    <div class="col-md-4 tinh-nang-noi-bat-div">
                         <div style="display: table-cell; vertical-align: middle;">
                             <ul class="list-unstyled">
                                 <li class="media">
                                     <div class="media-body pr-3">
                                         Phân tích cơ sở dữ liệu và tình trạng của xe để đưa ra gợi ý với phù hợp cho chủ xe
                                     </div>
-                                    <div class="align-self-center" style="border-radius: 5px; padding-top: 5px; width: 48px; height: 48px; background: blue; text-align: center; color: white; font-size: 24px;">
+                                    <div class="align-self-center icon-tinh-nang">
                                         <i class="fa fa-home"></i>
                                     </div>
                                 </li>
@@ -105,7 +119,7 @@
                                     <div class="media-body pr-3">
                                         Tìm kiếm chỗ sửa xe gần nhất
                                     </div>
-                                    <div class="align-self-center" style="border-radius: 5px; padding-top: 5px; width: 48px; height: 48px; background: blue; text-align: center; color: white; font-size: 24px;">
+                                    <div class="align-self-center icon-tinh-nang">
                                         <i class="fa fa-home"></i>
                                     </div>
                                 </li>
@@ -113,7 +127,7 @@
                                     <div class="media-body pr-3">
                                         Theo dõi được lịch sử bảo dưỡng xe của bạn và tìm kiếm địa điểm phù hợp nhất
                                     </div>
-                                    <div class="align-self-center" style="border-radius: 5px; padding-top: 5px; width: 48px; height: 48px; background: blue; text-align: center; color: white; font-size: 24px;">
+                                    <div class="align-self-center icon-tinh-nang">
                                         <i class="fa fa-home"></i>
                                     </div>
                                 </li>
@@ -121,30 +135,30 @@
                                     <div class="media-body pr-3">
                                         Gợi ý làm đẹp xe, vệ sinh xe định kỳ và tìm kiếm địa điểm phù hợp.
                                     </div>
-                                    <div class="align-self-center" style="border-radius: 5px; padding-top: 5px; width: 48px; height: 48px; background: blue; text-align: center; color: white; font-size: 24px;">
+                                    <div class="align-self-center icon-tinh-nang">
                                         <i class="fa fa-home"></i>
                                     </div>
                                 </li>
                             </ul>
                         </div>
                     </div>
-                    <div class="col-md-4">
-                        <a href="">
-                            <img class="img-fluid" style="width: 100%; border: 1px solid #FF584F; border-radius: 5px;" src="assets/images/carplus_home.jpeg" alt="">
+                    <div class="col-md-4" style="text-align: center;">
+                        <a href="javascript:void(0);">
+                            <img class="img-fluid img-border-rounded" src="assets/images/carplus_home.jpeg" alt="">
                         </a>
                     </div>
-                    <div style="min-height: 500px; display: table;" class="col-md-4">
+                    <div class="col-md-4 tinh-nang-noi-bat-div">
                         <div style="display: table-cell; vertical-align: middle;">
                             <ul class="list-unstyled">
                                 <li class="media">
-                                    <div class="align-self-center" style="border-radius: 5px; padding-top: 5px; width: 48px; height: 48px; background: blue; text-align: center; color: white; font-size: 24px;">
+                                    <div class="align-self-center icon-tinh-nang">
                                         <i class="fa fa-home"></i>
                                     </div>
                                     <div class="media-body pl-3">
                                         Hệ thống theo dõi tình trạng của xe được cập nhật liên tục
                                     </div>
                                     <li class="media pt-4">
-                                        <div class="align-self-center" style="border-radius: 5px; padding-top: 5px; width: 48px; height: 48px; background: blue; text-align: center; color: white; font-size: 24px;">
+                                        <div class="align-self-center icon-tinh-nang">
                                             <i class="fa fa-home"></i>
                                         </div>
                                         <div class="media-body pl-3">
@@ -152,7 +166,7 @@
                                         </div>
                                     </li>
                                     <li class="media pt-4">
-                                        <div class="align-self-center" style="border-radius: 5px; padding-top: 5px; width: 48px; height: 48px; background: blue; text-align: center; color: white; font-size: 24px;">
+                                        <div class="align-self-center icon-tinh-nang">
                                             <i class="fa fa-home"></i>
                                         </div>
                                         <div class="media-body pl-3">
@@ -160,7 +174,7 @@
                                         </div>
                                     </li>
                                     <li class="media pt-4">
-                                        <div class="align-self-center" style="border-radius: 5px; padding-top: 5px; width: 48px; height: 48px; background: blue; text-align: center; color: white; font-size: 24px;">
+                                        <div class="align-self-center icon-tinh-nang">
                                             <i class="fa fa-home"></i>
                                         </div>
                                         <div class="media-body pl-3">
@@ -168,7 +182,7 @@
                                         </div>
                                     </li>
                                     <li class="media pt-4">
-                                        <div class="align-self-center" style="border-radius: 5px; padding-top: 5px; width: 48px; height: 48px; background: blue; text-align: center; color: white; font-size: 24px;">
+                                        <div class="align-self-center icon-tinh-nang">
                                             <i class="fa fa-home"></i>
                                         </div>
                                         <div class="media-body pl-3">
@@ -191,35 +205,35 @@
     <div class="container">
         <div class="card-deck mb-3 text-center">
             <div class="card mb-4" style="border: none;">
-                <div class="card-header d-flex justify-content-center" style="border: 2px solid #FF584F; background-color: #FF584F; color: white; font-weight: bold;">
+                <div class="card-header d-flex justify-content-center icon-dich-vu">
                     <img style="filter: brightness(0) invert(1);" width="48" height="48" src="assets/images/icon_1.png" alt="">
                     <h4 style="margin: auto 0;">&nbsp; Gara</h4>
                 </div>
-                <div class="card-body text-left shadow-sm" style="padding-top: 5px; font-weight: 500; border-left: 1px solid rgba(0,0,0,.075); border-right: 1px solid rgba(0,0,0,.075); border-bottom: 1px solid rgba(0,0,0,.075); border-bottom-left-radius: 35px; border-bottom-right-radius: 35px;">
+                <div class="card-body text-left shadow-sm card-bottom-dichvu">
                     Cập nhật hồ sơ các dịch vụ đã sử dụng tại các trung tâm bảo dưỡng, gara chăm sóc xe, gara sửa chữa và người dùng có thể thực hiện đánh giá, gửi những phẩn hồi sau khi sử dụng dịch vụ để cải thiện cho những lần sau.
                 </div>
             </div>
             <div class="card mb-4" style="border: none;">
-                <div class="card-header d-flex justify-content-center" style="border: 2px solid #FF584F; background-color: #FF584F; color: white; font-weight: bold;">
+                <div class="card-header d-flex justify-content-center icon-dich-vu">
                     <img style="filter: brightness(0) invert(1);" width="48" height="48" src="assets/images/icon_2.png" alt="">
                     <h4 style="margin: auto 0;">&nbsp; My Car</h4>
                 </div>
-                <div class="card-body text-left shadow-sm" style="padding-top: 5px; font-weight: 500; border-left: 1px solid rgba(0,0,0,.075); border-right: 1px solid rgba(0,0,0,.075); border-bottom: 1px solid rgba(0,0,0,.075); border-bottom-left-radius: 35px; border-bottom-right-radius: 35px;">
+                <div class="card-body text-left shadow-sm card-bottom-dichvu">
                     Theo dỗi tình trạng hoạt động của xe và nhận những gợi ý chăm sóc xe từ hệ thống phân tích máy học của ứng dụng dựa trên những dữ liệu mà hệ thống thu thập được.
                 </div>
             </div>
             <div class="card mb-4" style="border: none;">
-                <div class="card-header d-flex justify-content-center" style="border: 2px solid #FF584F; background-color: #FF584F; color: white; font-weight: bold;">
+                <div class="card-header d-flex justify-content-center icon-dich-vu">
                     <img style="filter: brightness(0) invert(1);" width="48" height="48" src="assets/images/icon_3.png" alt="">
                     <h4 style="margin: auto 0;">&nbsp; Repair</h4>
                 </div>
-                <div class="card-body text-left shadow-sm" style="padding-top: 5px; font-weight: 500; border-left: 1px solid rgba(0,0,0,.075); border-right: 1px solid rgba(0,0,0,.075); border-bottom: 1px solid rgba(0,0,0,.075); border-bottom-left-radius: 35px; border-bottom-right-radius: 35px;">
+                <div class="card-body text-left shadow-sm card-bottom-dichvu">
                     Cung cấp những thông tin hướng dẫn đầy đủ để chủ xe có thể thực hiện việc sửa chữa, bảo dưỡng xe tại nhà đơn giản và ghi nhận những thắc mắc về vấn đề mà xe đang gặp phải gửi đến những chuyên gia để giải đáp.
                 </div>
             </div>
         </div>
 
-        <div id="DichVu" class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+        <div id="carplus_dichvu" class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
             <h2 style="text-transform: none;">Dịch vụ CARPLUS cung cấp
             </h2>
         </div>
@@ -228,62 +242,62 @@
             <div class="col-md-12">
                 <div class="row">
                     <div class="col-md-3 pt-3">
-                        <div style="text-align: center; height: 158px; vertical-align: middle; padding-top: 15px; background-color: #FF584F; border-top-left-radius: 35px; border-top-right-radius: 35px;">
+                        <div class="fee-card">
                             <img width="128" src="assets/images/icon_4.png" alt="">
                         </div>
-                        <div class="shadow-sm" style="border: 1px solid rgb(0, 0, 0, 0.075); border-top: none; padding-top: 10px; font-weight: 500;height: 10vh; background-color: #ffffff; text-align: center; vertical-align: middle; border-bottom-left-radius: 35px; border-bottom-right-radius: 35px;">
+                        <div class="shadow-sm fee-body">
                             <p style="font-weight: 500px;">Sử dụng các tính năng cơ bản</p>
                         </div>
                     </div>
                     <div class="col-md-3 pt-3">
-                        <div style="height: 158px; padding-top: 15px; background:linear-gradient(90deg, #a36209, #6a4006); text-align: center; vertical-align: middle; border-top-left-radius: 35px; border-top-right-radius: 35px;">
+                        <div class="fee-card " style="background:linear-gradient(90deg, #a36209, #6a4006);">
                             <img width="128" src="assets/images/icon_4.png" alt="">
                         </div>
-                        <div class="shadow-sm" style="border: 1px solid rgb(0, 0, 0, 0.075); border-top: none; padding-top: 10px; font-weight: 500;height: 10vh; background-color: #ffffff; text-align: center; vertical-align: middle; border-bottom-left-radius: 35px; border-bottom-right-radius: 35px;">
+                        <div class="shadow-sm fee-body">
                             <p style="font-weight: 500px;">Gói STANDARD - Tiết kiệm đến 2%</p>
                         </div>
                         <div class="pt-3 text-center">
                             <h2 class="card-title pricing-card-title">$9,99 <small class="text-muted">/ mo</small></h2>
-                            <a style="color: white; border-color: #FF584F; background-color: #FF584F; font-weight: 800;" class="btn btn-danger" href="javascript:void(0);">Nâng cấp ngay</a>
+                            <a class="btn btn-danger btn-carplus" href="javascript:void(0);">Nâng cấp ngay</a>
                         </div>
                     </div>
                     <div class="col-md-3 pt-3">
-                        <div style="height: 158px; padding-top: 15px; background:linear-gradient(90deg, #d7d7d7, #8c8c8c); text-align: center; vertical-align: middle; border-top-left-radius: 35px; border-top-right-radius: 35px;">
+                        <div class="fee-card" style="background:linear-gradient(90deg, #d7d7d7, #8c8c8c);">
                             <img width="128" src="assets/images/icon_4.png" alt="">
                         </div>
-                        <div class="shadow-sm" style="border: 1px solid rgb(0, 0, 0, 0.075); border-top: none; padding-top: 10px; font-weight: 500;height: 10vh; background-color: #ffffff; text-align: center; vertical-align: middle; border-bottom-left-radius: 35px; border-bottom-right-radius: 35px;">
+                        <div class="shadow-sm fee-body">
                             <p style="font-weight: 500px;">Gói SILVER - Tiết kiệm đến 5%</p>
                         </div>
                         <div class="pt-3 text-center">
                             <h2 class="card-title pricing-card-title">$29,99 <small class="text-muted">/ mo</small></h2>
-                            <a style="color: white; border-color: #FF584F; background-color: #FF584F; font-weight: 800;" class="btn btn-danger" href="javascript:void(0);">Nâng cấp ngay</a>
+                            <a class="btn btn-danger btn-carplus" href="javascript:void(0);">Nâng cấp ngay</a>
                         </div>
                     </div>
                     <div class="col-md-3 pt-3">
-                        <div style="height: 158px; padding-top: 15px; background:linear-gradient(90deg, #f0ba00, #9c7900); text-align: center; vertical-align: middle; border-top-left-radius: 35px; border-top-right-radius: 35px;">
+                        <div class="fee-card" style="background:linear-gradient(90deg, #f0ba00, #9c7900);">
                             <img width="128" src="assets/images/icon_4.png" alt="">
                         </div>
-                        <div class="shadow-sm" style="border: 1px solid rgb(0, 0, 0, 0.075); border-top: none; padding-top: 10px; font-weight: 500;height: 10vh; background-color: #ffffff; text-align: center; vertical-align: middle; border-bottom-left-radius: 35px; border-bottom-right-radius: 35px;">
+                        <div class="shadow-sm fee-body">
                             <p style="font-weight: 500px;">Gói GOLD - Tiết kiệm đến 10%</p>
                         </div>
                         <div class="pt-3 text-center">
                             <h2 class="card-title pricing-card-title">$59,99 <small class="text-muted">/ mo</small></h2>
-                            <a style="color: white; border-color: #FF584F; background-color: #FF584F; font-weight: 800;" class="btn btn-danger" href="javascript:void(0);">Nâng cấp ngay</a>
+                            <a class="btn btn-danger btn-carplus" href="javascript:void(0);">Nâng cấp ngay</a>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div id="DoiTac" class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
-                <h2 style="text-transform: none;">Trở thành đối tác của CARPLUS
+            <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+                <h2 id="carplus_doitac" class="pt-3" style="text-transform: none;">Trở thành đối tác của CARPLUS
                 </h2>
             </div>
 
             <div class="col-md-12 pt-3">
                 <div class="row">
                     <div class="col-md-4 pt-3 text-center">
-                        <div class="text-center" style="margin: 0 auto; vertical-align: middle; width: 96px; height: 96px; border: 5px solid #FF584F; border-radius: 50%;">
-                            <p style="color:#000000; font-family: 'Montserrat', sans-serif!important; font-weight: 900; font-size: 40px; padding-top: 14px;">1</p>
+                        <div class="text-center doitac-card">
+                            <p class="p-doitac">1</p>
                         </div>
                         <div class="pricing-header text-center" style="padding-top: 10px; margin-top: 10px;">
                             <h4 style="text-transform: none;">Tăng doanh thu mỗi tháng từ 10-15%
@@ -291,8 +305,8 @@
                         </div>
                     </div>
                     <div class="col-md-4 pt-3 text-center">
-                        <div class="text-center" style="margin: 0 auto; vertical-align: middle; width: 96px; height: 96px; border: 5px solid #FF584F; border-radius: 50%;">
-                            <p style="color:#000000; font-family: 'Montserrat', sans-serif!important; font-weight: 900; font-size: 40px; padding-top: 14px;">2</p>
+                        <div class="text-center doitac-card">
+                            <p class="p-doitac">2</p>
                         </div>
                         <div class="pricing-header text-center" style="padding-top: 10px; margin-top: 10px;">
                             <h4 style="text-transform: none;">Tiếp cận được nhiều khách hàng
@@ -300,8 +314,8 @@
                         </div>
                     </div>
                     <div class="col-md-4 pt-3 text-center">
-                        <div class="text-center" style="margin: 0 auto; vertical-align: middle; width: 96px; height: 96px; border: 5px solid #FF584F; border-radius: 50%;">
-                            <p style="color:#000000; font-family: 'Montserrat', sans-serif!important; font-weight: 900; font-size: 40px; padding-top: 14px;">3</p>
+                        <div class="text-center doitac-card">
+                            <p class="p-doitac">3</p>
                         </div>
                         <div class="pricing-header text-center" style="padding-top: 10px; margin-top: 10px;">
                             <h4 style="text-transform: none;">Kênh triển khai các ưu đãi, khuyến mãi
@@ -309,8 +323,8 @@
                         </div>
                     </div>
                     <div class="col-md-4 pt-3 text-center">
-                        <div class="text-center" style="margin: 0 auto; vertical-align: middle; width: 96px; height: 96px; border: 5px solid #FF584F; border-radius: 50%;">
-                            <p style="color:#000000; font-family: 'Montserrat', sans-serif!important; font-weight: 900; font-size: 40px; padding-top: 14px;">4</p>
+                        <div class="text-center doitac-card">
+                            <p class="p-doitac">4</p>
                         </div>
                         <div class="pricing-header text-center" style="padding-top: 10px; margin-top: 10px;">
                             <h4 style="text-transform: none;">Gợi ý các dịch vụ mới đến đúng khách hàng
@@ -318,8 +332,8 @@
                         </div>
                     </div>
                     <div class="col-md-4 pt-3 text-center">
-                        <div class="text-center" style="margin: 0 auto; vertical-align: middle; width: 96px; height: 96px; border: 5px solid #FF584F; border-radius: 50%;">
-                            <p style="color:#000000; font-family: 'Montserrat', sans-serif!important; font-weight: 900; font-size: 40px; padding-top: 14px;">5</p>
+                        <div class="text-center doitac-card">
+                            <p class="p-doitac">5</p>
                         </div>
                         <div class="pricing-header text-center" style="padding-top: 10px; margin-top: 10px;">
                             <h4 style="text-transform: none;">Tiếp nhận phản hồi và đánh giá
@@ -327,8 +341,8 @@
                         </div>
                     </div>
                     <div class="col-md-4 pt-3 text-center">
-                        <div class="text-center" style="margin: 0 auto; vertical-align: middle; width: 96px; height: 96px; border: 5px solid #FF584F; border-radius: 50%;">
-                            <p style="color:#000000; font-family: 'Montserrat', sans-serif!important; font-weight: 900; font-size: 40px; padding-top: 14px;">6</p>
+                        <div class="text-center doitac-card">
+                            <p class="p-doitac">6</p>
                         </div>
                         <div class="pricing-header text-center" style="padding-top: 10px; margin-top: 10px;">
                             <h4 style="text-transform: none;">Tạo được mối quan hệ lâu dài với khách hàng
@@ -342,32 +356,32 @@
                 <p class="lead">Quickly build an effective pricing table for your potential customers with this Bootstrap example. It’s built with default Bootstrap components and utilities with little customization.</p>
             </div>
 
-            <div id="TaiXuong" class="col-md-12">
+            <div id="carplus_download" class="col-md-12 pb-3 pt-3">
                 <div class="row">
-                    <div class="col-md-4">
-                        <a href="">
-                            <img class="img-fluid" style="width: 100%; height: auto;" src="assets/images/carplus_appdrawer.jpg" alt="">
+                    <div class="col-md-4" style="text-align:center;">
+                        <a href="javascript:void(0);">
+                            <img class="img-fluid img-carplus-download" src="assets/images/carplus_appdrawer.jpg" alt="">
                         </a>
                     </div>
-                    <div style="min-height: 500px; display: table;" class="col-md-8">
+                    <div class="col-md-8 carplus-download-div pt-3">
                         <div style="display: table-cell; vertical-align: middle; text-align: center;">
-                            <h2 style="text-transform: none;">&nbsp; Tải xuống ứng dụng <a style="color:#FF584F; font-family: 'Montserrat', sans-serif!important; font-weight: 900;" href="index.html">
-                                        CAR<sup style="color:#FF584F; font-family: 'Quicksand', sans-serif!important;">+</sup>
+                            <h2 style="text-transform: none;">&nbsp; Tải xuống ứng dụng <a class="a-logo" href="javascript:void(0);">
+                                        CAR<sup class="sup-logo">+</sup>
                                       </a> ngay</h2>
                             <div class="col-md-12 pt-3">
                                 <div class="row">
                                     <div class="col-md-2">
                                         &nbsp; </div>
-                                    <div class="col-md-4">
-                                        <img style="width: 100%;" src="assets/images/QR_code.png" alt="">
+                                    <div class="col-md-4 pb-3" style="text-align:center;">
+                                        <img class="img-qr-code" src="assets/images/QR_code.png" alt="">
                                     </div>
                                     <div class="col-md-5">
                                         <div class="row">
-                                            <div class="col-md-12">
-                                                <img style="width: 100%;" src="assets/images/google-play-logo-1518163351.png" alt="">
+                                            <div class="col-md-12 pb-3">
+                                                <img class="android-download" src="assets/images/google-play-logo-1518163351.png" alt="">
                                             </div>
-                                            <div class="col-md-12">
-                                                <img style="width: 100%;" src="assets/images/Download-On-the-App-store.png" alt="">
+                                            <div class="col-md-12 pb-3">
+                                                <img class="apple-download" src="assets/images/Download-On-the-App-store.png" alt="">
                                             </div>
                                         </div>
                                     </div>
@@ -389,17 +403,17 @@
                 <div class="col-6 col-md">
                     <h5>CARPLUS</h5>
                     <ul style="line-height: 2.0;" class="list-unstyled text-small">
-                        <li><a class="text-muted" href="javascript:toHref('chinhsachsudung');">Chính sách sử dụng</a></li>
-                        <li><a class="text-muted" href="javascript:toHref('chinhsachbaomat');">Chính sách bảo mật</a></li>
-                        <li><a class="text-muted" href="javascript:toHref('quychehoatdong');">Quy chế hoạt động</a></li>
+                        <li><a class="text-muted" href="javascript:void(0);">Chính sách sử dụng</a></li>
+                        <li><a class="text-muted" href="javascript:void(0);">Chính sách bảo mật</a></li>
+                        <li><a class="text-muted" href="javascript:void(0);">Quy chế hoạt động</a></li>
                     </ul>
                 </div>
                 <div class="col-6 col-md">
                     <h5>Theo dõi chúng tôi</h5>
                     <div>
-                        <button id="btnFacebookLink" type="button" style="border: none; font-size: 20px; width: 40px; height: 40px;" class="btn btn-primary"><i class="fa fa-facebook" aria-hidden="true"></i></button>
-                        <button id="btnYoutubeLink" type="button" style="border: none; font-size: 20px; width: 40px; height: 40px;" class="btn btn-danger"><i class="fa fa-youtube" aria-hidden="true"></i></button>
-                        <button id="btnInstagramLink" type="button" style="background:linear-gradient(60deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d); border: none; font-size: 20px; width: 40px; height: 40px;" class="btn btn-primary"><i class="fa fa-linkedin" aria-hidden="true"></i></button>
+                        <button id="btnFacebookLink" type="button" class="btn btn-primary btn-facebook"><i class="fa fa-facebook" aria-hidden="true"></i></button>
+                        <button id="btnYoutubeLink" type="button" class="btn btn-danger btn-youtube"><i class="fa fa-youtube" aria-hidden="true"></i></button>
+                        <button id="btnInstagramLink" type="button" class="btn btn-primary btn-ins"><i class="fa fa-linkedin" aria-hidden="true"></i></button>
                     </div>
                 </div>
             </div>
@@ -409,39 +423,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <script>
-        $('.carousel').carousel();
-
-        function scrollToVeCarPlus() {
-            $('html, body').animate({
-                scrollTop: $("#veCarPlus").offset().top
-            }, 1000)
-        }
-
-        function scrollToTinhNangNoiBat() {
-            $('html, body').animate({
-                scrollTop: $("#TinhNangNoiBat").offset().top
-            }, 1500)
-        }
-
-        function scrollToDichVu() {
-            $('html, body').animate({
-                scrollTop: $("#DichVu").offset().top
-            }, 1500)
-        }
-
-        function scrollToDoiTac() {
-            $('html, body').animate({
-                scrollTop: $("#DoiTac").offset().top
-            }, 1500)
-        }
-
-        function scrollToTaiXuong() {
-            $('html, body').animate({
-                scrollTop: $("#TaiXuong").offset().top
-            }, 1500)
-        }
-    </script>
+    <script src="assets/js/index.js"></script>
 </body>
 
 </html>
