@@ -220,7 +220,14 @@ a {
     height: calc(100vh - 70px);
 }
 
+.top-10vh {
+    top: 10vh;
+}
+
 @media screen and (max-width: 768px) {
+    .top-10vh {
+        top: 15px;
+    }
     .max-100cp {
         height: inherit;
     }
