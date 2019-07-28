@@ -6,6 +6,10 @@
 
 //FUNCTION : DONT CHANGE ?
 
+$('.navbar-brand').click(() => {
+    window.location.href = 'index.html';
+});
+
 $('.gioi-thieu').click(() => {
     scrollToId('carplus_about');
 });

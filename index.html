@@ -9,7 +9,7 @@
     <meta name="generator" content="">
     <title>CARPLUS · Nền tảng sinh thái dịch vụ ô tô</title>
     <link rel="shortcut icon" href="assets/images/carplus_logo.JPEG" type="image/jpeg">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800,900|Quicksand:400,500,600,700&display=swap&subset=vietnamese" rel="stylesheet">
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link href="assets/css/style.css" rel="stylesheet">
@@ -28,16 +28,16 @@
             <div class="collapse navbar-collapse" id="navbarCarPlus">
                 <ul class="navbar-nav ml-auto pr-3" style="line-height: 2.0">
                     <li class="nav-item">
-                        <a class="navbar-link p-2 text-dark gioi-thieu" href="javascript:void(0);">Về CARPLUS</a>
+                        <a class="navbar-link p-2 text-dark gioi-thieu" style="font-weight: bold;" href="javascript:void(0);">Về CARPLUS</a>
                     </li>
                     <li class="nav-item">
-                        <a class="navbar-link p-2 text-dark tinh-nang" href="javascript:void(0);">Tính năng</a>
+                        <a class="navbar-link p-2 text-dark tinh-nang" style="font-weight: bold;" href="javascript:void(0);">Tính năng</a>
                     </li>
                     <li class="nav-item">
-                        <a class="navbar-link p-2 text-dark dich-vu" href="javascript:void(0);">Dịch vụ</a>
+                        <a class="navbar-link p-2 text-dark dich-vu" style="font-weight: bold;" href="javascript:void(0);">Dịch vụ</a>
                     </li>
                     <li class="nav-item">
-                        <a class="navbar-link p-2 text-dark doi-tac" href="javascript:void(0);">Đối tác</a>
+                        <a class="navbar-link p-2 text-dark doi-tac" style="font-weight: bold;" href="javascript:void(0);">Đối tác</a>
                     </li>
                 </ul>
                 <form class="form-inline my-2 my-lg-0 pl-2">
@@ -47,7 +47,7 @@
         </div>
     </nav>
 
-    <div class="container">
+    <div class="container-fluid max-by-khang">
         <div class="row">
             <div class="col-md-12 max-100cp pb-3">
                 <div id="carouselCarPlusIndicators" class="carousel slide max-100cp" data-ride="carousel">
@@ -77,7 +77,7 @@
                     </a>
                 </div>
             </div>
-            <div id="carplus_about" class="col-md-12 pt-0">
+            <div id="carplus_about" class="col-md-12 pt-0 max-by-khang2" style="margin: 0 auto;">
                 <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
                     <h1 class="display-4" style="text-transform: none;">Về <a style="font-size: 50px;" class="a-logo" href="javascript:void(0);">
                         CAR<sup class="sup-logo">+</sup>
@@ -98,7 +98,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-12">
+            <div class="col-md-12 max-by-khang2" style="margin: 0 auto;">
                 <div id="carplus_tinhnang" class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
                     <h2 style="text-transform: none;">Những tính năng nổi bật của CARPLUS ?
                     </h2>
@@ -246,7 +246,7 @@
                             <img width="128" src="assets/images/icon_4.png" alt="">
                         </div>
                         <div class="shadow-sm fee-body">
-                            <p style="font-weight: 500px;">Sử dụng các tính năng cơ bản</p>
+                            <p style="font-weight: 500;">Gói BEGIN<br/>Các tính năng cơ bản</p>
                         </div>
                     </div>
                     <div class="col-md-3 pt-3">
@@ -254,7 +254,7 @@
                             <img width="128" src="assets/images/icon_4.png" alt="">
                         </div>
                         <div class="shadow-sm fee-body">
-                            <p style="font-weight: 500px;">Gói STANDARD - Tiết kiệm đến 2%</p>
+                            <p style="font-weight: 500;">Gói STANDARD<br/>Tiết kiệm đến 2%</p>
                         </div>
                         <div class="pt-3 text-center">
                             <h2 class="card-title pricing-card-title">$9,99 <small class="text-muted">/ mo</small></h2>
@@ -266,7 +266,7 @@
                             <img width="128" src="assets/images/icon_4.png" alt="">
                         </div>
                         <div class="shadow-sm fee-body">
-                            <p style="font-weight: 500px;">Gói SILVER - Tiết kiệm đến 5%</p>
+                            <p style="font-weight: 500;">Gói SILVER<br/>Tiết kiệm đến 5%</p>
                         </div>
                         <div class="pt-3 text-center">
                             <h2 class="card-title pricing-card-title">$29,99 <small class="text-muted">/ mo</small></h2>
@@ -278,7 +278,7 @@
                             <img width="128" src="assets/images/icon_4.png" alt="">
                         </div>
                         <div class="shadow-sm fee-body">
-                            <p style="font-weight: 500px;">Gói GOLD - Tiết kiệm đến 10%</p>
+                            <p style="font-weight: 500;">Gói GOLD<br/>Tiết kiệm đến 10%</p>
                         </div>
                         <div class="pt-3 text-center">
                             <h2 class="card-title pricing-card-title">$59,99 <small class="text-muted">/ mo</small></h2>
@@ -420,9 +420,9 @@
         </footer>
     </div>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/index.js"></script>
 </body>
 
