@@ -92,21 +92,43 @@ a {
     font-weight: 800;
 }
 
-.icon-tinh-nang {
-    border-radius: 5px;
+.icon-tinh-nang-right {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
     padding-top: 5px;
     width: 48px;
     height: 48px;
-    background: blue;
+    background: #FF584F;
     text-align: center;
-    color: white;
+    color: #fff;
     font-size: 24px;
+    opacity: 0.4;
+    cursor: pointer;
+}
+
+.icon-tinh-nang-left {
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    padding-top: 5px;
+    width: 48px;
+    height: 48px;
+    background: #FF584F;
+    text-align: center;
+    color: #fff;
+    font-size: 24px;
+    opacity: 0.4;
+    cursor: pointer;
 }
 
 .img-border-rounded {
     width: 100%;
     border: 1px solid #FF584F;
     border-radius: 5px;
+    margin: auto auto;
 }
 
 .icon-dich-vu {
@@ -199,7 +221,8 @@ a {
 }
 
 .img-carplus-download {
-    width: 100%;
+    width: 85%;
+    margin: auto auto;
 }
 
 .carplus-download-div {
@@ -233,7 +256,7 @@ a {
 }
 
 .max-by-khang2 {
-    max-width: 70%!important;
+    max-width: 75%!important;
 }
 
 @media screen and (max-width: 768px) {
