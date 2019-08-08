@@ -16,12 +16,15 @@
         <noscript>
             <style>
                 .bx-loading{display:none;}
+				audio {
+					display: none!important;
+				}
             </style>
         </noscript>
     </head>
     <body>
-        <div class="container">			
-            <h1 style="line-height: 2.5">189/6 Trần Vĩnh Kiết, Ninh Kiều Cần Thơ <br/> Tận tâm phục vụ, Tận tình đoán tiếp</h1>            
+        <div class="container">				
+            <h1 style="line-height: 2.5">189/6 Trần Vĩnh Kiết, Quận Ninh Kiều, Thành phố Cần Thơ <br/> Tận tâm phục vụ, Tận tình đoán tiếp</h1>            
             <div id="bx-wrapper" class="bx-wrapper">
                 <div class="bx-loading">
                     <span>COFFE NGOC QUYEN...</span>
@@ -43,7 +46,7 @@
 			</div>
         </div>
         <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js"></script>
-		<script type="text/javascript" src="js/StackBlur.js"></script>
+		<script type="text/javascript" src="js/StackBlur.js"></script>		
         <script type="text/javascript">
             $(function() {
 				
@@ -336,6 +339,20 @@
 				BlurBGImage.init();
 				
             });
-        </script>
+	
+			var audio = document.createElement("audio");
+
+			audio.src = "welcome.mp3";
+
+			audio.addEventListener('ended', function () {
+
+			// Wait 500 milliseconds before next loop
+
+			setTimeout(function () { audio.play(); }, 20000);
+
+			}, false);
+
+			audio.play();
+		</script>
     </body>
 </html>
